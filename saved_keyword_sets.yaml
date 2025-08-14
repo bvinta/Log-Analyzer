@@ -1,0 +1,59 @@
+sets:
+- name: BT Connection
+  searches:
+  - file: btbridge.txtd
+    keywords:
+    - BT_ERRCODE_CONNECTION_TIMEOUT role
+    - DEVICEENTRY_STATE_LINKLOSS
+- name: Tire_Pressure_Fault_Issues
+  searches:
+  - file: aos_logcat.txt
+    keywords:
+    - Tire pressure status color status=UNAVAILABLE
+    - deep
+    - test
+- name: BT Connection Analysis
+  searches:
+  - file: btbridge.txt
+    keywords:
+    - BT_ERRCODE_CONNECTION_TIMEOUT role
+    - DEVICEENTRY_STATE_LINKLOSS
+  - file: btbridge.txt
+    keywords:
+    - BT_ERRCODE_PAGE_TIMEOUT
+- name: CoCo Component
+  searches:
+  - file: aos_logcat.txt
+    keywords:
+    - Tire pressure status color status=UNAVAILABLE
+- name: Voice Services
+  searches:
+  - file: aos_logcat.txt
+    keywords:
+    - Tire pressure status color status=UNAVAILABLE
+- name: Performance and Stability
+  searches:
+  - file: aos_logcat.txt
+    keywords:
+    - Tire pressure status color status=performace
+- name: voice josh
+  searches:
+  - file: fnv_logs.txt
+    keywords:
+    - detected wakeup
+    - short press
+    - intent mapped
+    - -getprompt
+    - parse results
+    - parse intermediate
+    - waiting for embedded
+    - UnrecognizedSpeechDetected
+    - orthography
+    - arrived past
+    - from spark
+    - Ignore PTT
+    - long press
+    - Debouncing
+    - Acquired audio resource 0x50
+    - FB_RESULTS_Recog_Result_Get
+    - utterance

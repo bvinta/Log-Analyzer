@@ -1,0 +1,20 @@
+searches:
+- file: fnv_logs.txt
+  keywords:
+  - detected wakeup
+  - short press
+  - intent mapped
+  - -getprompt
+  - parse results
+  - parse intermediate
+  - waiting for embedded
+  - UnrecognizedSpeechDetected
+  - orthography
+  - arrived past
+  - from spark
+  - Ignore PTT
+  - long press
+  - Debouncing
+  - Acquired audio resource 0x50
+  - FB_RESULTS_Recog_Result_Get
+  - utterance
